@@ -1,0 +1,38 @@
+{
+  "name": "my_test_schema",
+  "type": "record",
+  "fields": [
+    {
+      "name": "events",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "events_record",
+          "type": "record",
+          "fields": [
+            {
+              "name": "experimentId",
+              "type": "string"
+            },
+            {
+              "name": "variantId",
+              "type": "string"
+            },
+            {
+              "name": "accountId",
+              "type": "string"
+            },
+            {
+              "name": "deviceId",
+              "type": "string"
+            },
+            {
+              "name": "date",
+              "type": "int"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

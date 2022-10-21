@@ -1,0 +1,15 @@
+{
+  "name": "test_zio",
+  "config": {
+    "connector.class": "io.confluent.kafka.connect.datagen.DatagenConnector",
+    "kafka.topic": "test_zio",
+    "schema.filename": "/etc/test-zio.avsc",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter.schema.registry.url": "http://schema-registry:8081",
+    "value.converter.schemas.enable": "false",
+    "max.interval": 1000,
+    "iterations": 1000,
+    "tasks.max": "1"
+  }
+}
